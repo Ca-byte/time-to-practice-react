@@ -48,7 +48,7 @@ const AddUser = (props) => {
   };
 
   return (
-    <div>
+    <>
       {error.title && (
         <ErrorModal
           title={error.title}
@@ -65,7 +65,7 @@ const AddUser = (props) => {
             value={enteredUserName}
             onChange={userChangeNameHandler}
           />
-          <label htmlFor="userAge">Age (Years)</label>
+          <label htmlFor="userAge"> Age (Years)</label>
           <input
             type="number"
             id="userAge"
@@ -75,7 +75,7 @@ const AddUser = (props) => {
           <Button type="submit">Add User</Button>
         </form>
       </Card>
-    </div>
+    </>
   );
 };
 export default AddUser;
